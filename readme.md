@@ -1,4 +1,4 @@
-# 🔁Media Transfer Telegram by @amnesty808
+# 🔁Media Transfer Telegram by amnesty808
 
 ## Описание для приложения
 
