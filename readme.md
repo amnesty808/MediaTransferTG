@@ -27,7 +27,7 @@
 1. Находясь в файле проекта создайте виртуальное окружение с помощью venv:
 
    ```bash
-   python -m venv myenv
+   python -m venv .venv
    ```
 
 2. Активируйте виртуальное окружение:
@@ -35,13 +35,13 @@
    - На Windows:
 
      ```bash
-     .\myenv\Scripts\activate
+     .\.venv\Scripts\activate
      ```
 
    - На macOS/Linux:
 
      ```bash
-     source myenv/bin/activate
+     source .venv/bin/activate
      ```
 
 ### Установка необходимых библиотек
