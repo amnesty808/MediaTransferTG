@@ -15,27 +15,15 @@ os.system('cls' if os.name == 'nt' else 'clear')
 from pyrogram import Client
 
 def create_session(folder, name, api_id, api_hash):
-    """
-    Создает сессию Pyrogram и сохраняет ее в указанной папке.
-
-    :param folder: Папка для хранения файлов сессии.
-    :param name: Имя сессии, например 'my_account' или 'user_tg_bot'.
-    :param api_id: Ваш API ID Telegram.
-    :param api_hash: Ваш API Hash Telegram.
-    """
     # Создаем папку, если она не существует
     if not os.path.exists(folder):
         os.makedirs(folder)
-    
-    # Полный путь к файлу сессии
     session_path = os.path.join(folder, name)
     
     app = Client(session_path, api_id, api_hash)
     app.start()
     print(f"Сессия '{name}' создана в папке '{folder}'.")
     app.stop()
-
-# Замените YOUR_API_ID и YOUR_API_HASH на ваши значения
 api_id = config.api_id                         
 api_hash = config.api_hash      
 
